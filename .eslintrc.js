@@ -4,7 +4,9 @@ module.exports = {
     es2021: true
   },
   extends: [
-    'plugin:vue/essential',
+    'plugin:vue/vue3-essential',
+    'plugin:vue/vue3-strongly-recommended',
+    'plugin:vue/vue3-recommended',
     'airbnb-base',
     'plugin:prettier/recommended' // 添加 prettier 插件
   ],
