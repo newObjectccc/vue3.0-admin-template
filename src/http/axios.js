@@ -15,7 +15,6 @@ axios.interceptors.request.use(
      * 根据你的项目实际情况来对 config 做处理
      * 这里对 config 不做任何处理，直接返回
      */
-    console.log(config)
     return config
   },
   (error) => Promise.reject(error)
@@ -28,11 +27,9 @@ axios.interceptors.response.use(
      * 根据你的项目实际情况来对 response 和 error 做处理
      * 这里对 response 和 error 不做任何处理，直接返回
      */
-    console.log(response)
     return response
   },
   (error) => {
-    console.error('[Axios response interceptors Error]', error.response)
     return Promise.reject(error)
   }
 )
