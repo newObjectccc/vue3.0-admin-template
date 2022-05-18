@@ -1,0 +1,24 @@
+:root {
+  --background-color: #eeeeee;
+  --background-white: #fff;
+  --primary-color: #1890ff;
+  --primary-hover-color: #40a9ff;
+  --primary-button-active-color: #fff;
+  --primary-shadow-color: #d1e9ff;
+  --danger-color: #f5222d;
+  --primary-bg: #fff;
+  --primary-font-size: 16px;
+  --primary-font-color: rgba(0, 0, 0, 0.85);
+  --label-font-color: rgba(0, 0, 0, 0.65);
+  --no-data-font-color: rgba(0, 0, 0, 0.45);
+  --primary-border: 1px solid #d8d8d8;
+  --primary-border-radius: 4px;
+  --primary-border-color: #f0f2f5;
+  --primary-border-color-deeply: #979797;
+  --desc-tips-default-color: #888;
+  --desc-tips-deeply-color: #666;
+  --default-form-title-color: #3baadb;
+  --default-color-input-placeholder: #c4c4c4;
+  --margin-base: 20px;
+  --padding-base: 20px;
+}

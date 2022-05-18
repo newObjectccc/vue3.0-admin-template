@@ -1,7 +1,8 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true
+    es2021: true,
+    'vue/setup-compiler-macros': true
   },
   extends: [
     'plugin:vue/vue3-essential',
@@ -19,8 +20,14 @@ module.exports = {
     'no-param-reassign': ['error', { props: false }],
     'import/no-unresolved': [
       2,
-      { ignore: ['\\.css$', '\\.img$', '\\.gif$', '\\.png$', '\\.svg$'] }
+      {
+        commonjs: true,
+        amd: true,
+        ignore: ['\\.css$', '\\.img$', '\\.gif$', '\\.png$', '\\.svg$', '\\.vue$']
+      }
     ],
-    'import/no-extraneous-dependencies': ['error', { peerDependencies: true }]
+    'import/no-extraneous-dependencies': ['error', { peerDependencies: true }],
+    'no-undef': ['error', { typeof: false }],
+    'no-shadow': ['error', { allow: ['state'] }]
   }
 }

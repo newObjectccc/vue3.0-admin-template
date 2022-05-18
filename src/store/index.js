@@ -1,27 +1,12 @@
 import { createStore } from 'vuex'
+import breadcrumb from './modules/breadcrumb'
+import cacheStore from './modules/cacheStore'
+import userInfo from './modules/userInfo'
 
-const defaultState = {
-  count: 0
-}
-
-// Create a new store instance.
 export default createStore({
-  state() {
-    return defaultState
-  },
-  mutations: {
-    increment(state) {
-      state.count += 1
-    }
-  },
-  actions: {
-    increment(context) {
-      context.commit('increment')
-    }
-  },
-  getters: {
-    double(state) {
-      return 2 * state.count
-    }
+  modules: {
+    breadcrumb,
+    cacheStore,
+    userInfo
   }
 })

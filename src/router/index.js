@@ -1,17 +1,21 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-// import Home from '@/views/home.vue'
+// import { ElMessage } from 'element-plus'
+import routes from './routes'
 
-const routes = [
-  // {
-  //   path: '/',
-  //   name: 'Home',
-  //   component: Home // () => import('@/views/axios.vue') // 懒加载组件
-  // },
-]
+const premissionRoutes = routes
+export function usePremissionRoutes() {
+  // TODO
+  return JSON.parse(JSON.stringify(premissionRoutes))
+}
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes
+  routes: premissionRoutes
+})
+
+router.beforeEach((to, from, next) => {
+  // ElMessage.success({ message: '跳转啦' })
+  next()
 })
 
 export default router

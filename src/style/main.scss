@@ -1,0 +1,50 @@
+@mixin flex-rn {
+  display: flex;
+  flex-flow: row nowrap;
+}
+@mixin flex-cn {
+  display: flex;
+  flex-flow: column nowrap;
+}
+@mixin flex-rncc {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-rnbc {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin flex-cncc {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-rn {
+  width: 100%;
+  @include flex-rn
+}
+.flex-cn {
+  width: 100%;
+  @include flex-cn
+}
+.flex-rncc {
+  width: 100%;
+  @include flex-rncc
+}
+.flex-rnbc {
+  width: 100%;
+  @include flex-rnbc
+}
+.flex-cncc {
+  width: 100%;
+  @include flex-cncc
+}
+.cursor-pr {
+  cursor: pointer;
+}
